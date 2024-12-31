@@ -229,7 +229,7 @@ function App() {
 					</div>
 					<div className="input-heading">
 						<label htmlFor="repayments">
-							How long this will it take to repay at value provided
+							How many months for repayments at X
 						</label>
 						<input
 							type="radio"
@@ -242,7 +242,7 @@ function App() {
 						/>
 					</div>
 					<div className="input-heading">
-						<label htmlFor="month-repayments">Repay in X Months</label>
+						<label htmlFor="month-repayments">Repayments in X months</label>
 						<input
 							type="radio"
 							value="desiredMonths"
