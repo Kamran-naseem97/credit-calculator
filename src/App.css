@@ -3,6 +3,7 @@
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
+	color: white;
 }
 
 .logo {
@@ -14,11 +15,15 @@
 }
 
 .logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
+	filter: drop-shadow(0 0 2em #40d0b9);
 }
 
-.logo.react:hover {
-	filter: drop-shadow(0 0 2em #61dafbaa);
+.clear-button:hover {
+	filter: drop-shadow(0 0 1em #40d0b9);
+}
+
+.calculate-button:hover {
+	filter: drop-shadow(0 0 1em #40d0b9);
 }
 
 .heading {
@@ -42,33 +47,20 @@
 }
 
 .calculate-button {
+	margin: 6px;
 	margin-top: 25px;
 	background-color: black;
 }
 
 .clear-button {
+	margin: 6px;
 	margin-top: 25px;
-	margin: 4px;
 	background-color: #444444;
 }
 
 .results-table table {
 	width: 100%;
 	border-collapse: collapse;
-}
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	a:nth-of-type(2) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
 }
 
 .card {
