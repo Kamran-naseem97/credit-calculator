@@ -1,0 +1,82 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+
+.logo {
+	height: 120px;
+	padding: 24px;
+	will-change: filter;
+	transition: filter 300ms;
+	border-radius: 50px;
+}
+
+.logo:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+	filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.heading {
+	font-size: large;
+	padding-bottom: 24px;
+}
+
+.calculator-card {
+	padding: 14px;
+	border-radius: 10px;
+	background-color: #888;
+	box-shadow: 5px 5px #303030;
+}
+
+.input-heading {
+	padding-top: 3px;
+}
+
+.new-input-section {
+	padding-top: 14px;
+}
+
+.calculate-button {
+	margin-top: 25px;
+	background-color: black;
+}
+
+.clear-button {
+	margin-top: 25px;
+	margin: 4px;
+	background-color: #444444;
+}
+
+.results-table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	a:nth-of-type(2) .logo {
+		animation: logo-spin infinite 20s linear;
+	}
+}
+
+.card {
+	padding: 2em;
+}
+
+.error-message {
+	color: rgb(164, 31, 31);
+	font-size: 0.9em;
+	margin-top: 4px;
+}
