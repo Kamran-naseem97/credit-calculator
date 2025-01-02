@@ -3,7 +3,6 @@
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
-	color: white;
 }
 
 .logo {
@@ -50,12 +49,14 @@
 	margin: 6px;
 	margin-top: 25px;
 	background-color: black;
+	color: white;
 }
 
 .clear-button {
 	margin: 6px;
 	margin-top: 25px;
 	background-color: #444444;
+	color: white;
 }
 
 .results-table table {

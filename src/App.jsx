@@ -31,7 +31,9 @@ function App() {
 			newErrors.interestRate = "Please enter a valid interest rate.";
 		}
 
-		if (selectedMode === "minimum") {
+		if (!selectedMode) {
+			newErrors.selectedMode = "Please select a repayment mode.";
+		} else if (selectedMode === "minimum") {
 			if (!maxMonths || isNaN(maxMonths)) {
 				newErrors.maxMonths = "Please enter the number of months.";
 			}
@@ -45,7 +47,7 @@ function App() {
 			}
 		} else if (selectedMode === "desiredMonths") {
 			if (!desiredMonths || isNaN(desiredMonths)) {
-				newErrors.desiredMonths = "Please enter a valid number of months.";
+				newErrors.desiredMonths = "Please enter the number of months.";
 			}
 		}
 
@@ -324,6 +326,9 @@ function App() {
 				<button className="calculate-button" onClick={calculateRepayments}>
 					Calculate
 				</button>
+				{errors.selectedMode && (
+					<p className="error-message">{errors.selectedMode}</p>
+				)}
 			</div>
 
 			{results.length > 0 && (
